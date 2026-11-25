@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Book of Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="journal">
+    <header class="cover">
+      <p class="eyebrow">A keepsake made with love ♡</p>
+      <div class="cover-heart">♡</div>
+      <h1>A Little Book<br>of Us</h1>
+      <p class="names">Mira ♡ Aarav</p>
+      <p class="date">Since February 14, 2024</p>
+      <button class="primary-button" id="openStory">Open our memories ♡</button>
+      <p class="tiny-note">Tap a little memory to open it</p>
+    </header>
+
+    <section class="memory-menu">
+      <button class="memory-card" data-popup="firsts">
+        <span class="sticker">🌷</span>
+        <span class="card-title">Our Firsts</span>
+        <span class="card-subtitle">Little beginnings</span>
+      </button>
+
+      <button class="memory-card" data-popup="moments">
+        <span class="sticker">🎞️</span>
+        <span class="card-title">Favorite Moments</span>
+        <span class="card-subtitle">The memories we keep</span>
+      </button>
+
+      <button class="memory-card" data-popup="letter">
+        <span class="sticker">💌</span>
+        <span class="card-title">A Letter for You</span>
+        <span class="card-subtitle">From my heart</span>
+      </button>
+
+      <button class="memory-card" data-popup="surprise">
+        <span class="sticker">🎁</span>
+        <span class="card-title">One More Surprise</span>
+        <span class="card-subtitle">A little something</span>
+      </button>
+    </section>
+
+    <footer class="journal-footer">
+      <span>made of memories ♡</span>
+      <span>page 01</span>
+    </footer>
+  </main>
+
+  <div class="popup-backdrop" id="popupBackdrop" aria-hidden="true">
+    <section class="popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+      <button class="close-button" id="closePopup" aria-label="Close popup">×</button>
+      <p class="popup-label">A page from our journal</p>
+      <h2 id="popupTitle">Our little memory</h2>
+      <div id="popupContent"></div>
+      <button class="primary-button" id="donePopup">Back to our journal ♡</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
